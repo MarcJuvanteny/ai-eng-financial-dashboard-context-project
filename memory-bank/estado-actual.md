@@ -27,5 +27,10 @@
 - Mejorar la gestión de errores y mensajes al usuario.
 - Definir usuario no privilegiado en los Dockerfile.
 
+## Skill aplicada
+- Skill: performance (addyosmani/web-quality-skills).
+- Motivo: este dashboard usa gráficas y puede crecer en carga de datos.
+- Valor: ayuda a detectar mejoras simples en tiempo de carga y tamaño de bundle.
+
 ## Conclusión
 El proyecto está en una fase funcional y bien estructurada, pero requiere mejoras en persistencia, seguridad, internacionalización y robustez para estar listo para producción.
