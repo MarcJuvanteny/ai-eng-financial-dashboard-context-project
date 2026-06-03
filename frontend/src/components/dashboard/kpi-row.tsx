@@ -9,6 +9,8 @@ interface KPIRowProps {
 }
 
 export function KPIRow({ metrics, loading }: KPIRowProps) {
+  const isLoading = loading ?? false
+
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
       <KPICard
@@ -17,7 +19,7 @@ export function KPIRow({ metrics, loading }: KPIRowProps) {
         helperText="Cumulative revenue from all income movements"
         icon={TrendingUp}
         variant="income"
-        loading={loading}
+        loading={isLoading}
       />
       <KPICard
         label="Total Outcome"
@@ -25,7 +27,7 @@ export function KPIRow({ metrics, loading }: KPIRowProps) {
         helperText="Total expenditure across all categories"
         icon={TrendingDown}
         variant="outcome"
-        loading={loading}
+        loading={isLoading}
       />
       <KPICard
         label="Profit"
@@ -33,7 +35,7 @@ export function KPIRow({ metrics, loading }: KPIRowProps) {
         helperText="Net profit — income minus total outcome"
         icon={DollarSign}
         variant="profit"
-        loading={loading}
+        loading={isLoading}
       />
       <KPICard
         label="Profit Margin"
@@ -41,7 +43,7 @@ export function KPIRow({ metrics, loading }: KPIRowProps) {
         helperText="Profit as a percentage of total income"
         icon={BarChart2}
         variant="profitPercent"
-        loading={loading}
+        loading={isLoading}
       />
     </div>
   )

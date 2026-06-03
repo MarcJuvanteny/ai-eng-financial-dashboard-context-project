@@ -54,7 +54,7 @@ export function computeMonthlyData(
   return Object.keys(monthlyMap)
     .sort()
     .map((yearMonthKey) => {
-      const { income, outcome } = monthlyMap[yearMonthKey];
+      const { income, outcome } = monthlyMap[yearMonthKey]!;
       const profit = income - outcome;
       const profitPercent = income > 0 ? (profit / income) * 100 : 0;
       return {
