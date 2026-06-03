@@ -32,5 +32,10 @@
 - Motivo: este dashboard usa gráficas y puede crecer en carga de datos.
 - Valor: ayuda a detectar mejoras simples en tiempo de carga y tamaño de bundle.
 
+## Skill personalizada
+- Skill: financial-dashboard-data-standard.
+- Motivo: el dashboard financiero necesita formato consistente de moneda y porcentaje.
+- Valor: evita errores de locale y moneda hardcodeados.
+
 ## Conclusión
 El proyecto está en una fase funcional y bien estructurada, pero requiere mejoras en persistencia, seguridad, internacionalización y robustez para estar listo para producción.

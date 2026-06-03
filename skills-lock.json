@@ -1,6 +1,11 @@
 {
   "version": 1,
   "skills": {
+    "financial-dashboard-data-standard": {
+      "source": "/workspaces/ai-eng-financial-dashboard-context-project/.skills/financial-dashboard-data-standard",
+      "sourceType": "local",
+      "computedHash": "2c2202957a11911e97b46c8e1151ebeaa448fd4ba49cbee29a30b12802dc795d"
+    },
     "performance": {
       "source": "addyosmani/web-quality-skills",
       "sourceType": "github",
